@@ -63,7 +63,7 @@ class Customer {
         total += meal.price;
       }
     );
-    return sum;
+    return total;
   }
 }
 
