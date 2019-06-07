@@ -26,7 +26,12 @@ class Neighborhood {
     );
   }
   meals() {
-
+    let arrMeals = this.deliveries().map(
+      function(delivery) {
+        return delivery.meal();
+      }
+    );
+    return [... new Set(arrMeals)];
   }
 }
 
