@@ -77,12 +77,12 @@ class Meal {
   deliveries() {
     return store.deliveries.filter(
       function(delivery) {
-        return deliveryId.mealId === this.id;
+        return delivery.mealId === this.id;
       }
     );
   }
   customers() {
-    return store.deliveries().map(
+    return this.deliveries().map(
       function(delivery) {
         return delivery.customer();
       }
