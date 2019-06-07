@@ -26,7 +26,7 @@ class Neighborhood {
     );
   }
   meals() {
-    
+
   }
 }
 
